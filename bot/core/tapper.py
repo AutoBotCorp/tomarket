@@ -421,7 +421,6 @@ async def run_tapper(tg_client: Client):
     proxy = None
     if settings.USE_PROXY_FROM_FILE:
         proxy_data = profiles[tg_client.name]['proxy'].strip()
-        logger.info(f"{tg_client.name} | Run bot with this proxy: {proxy_data}")
         if proxy_data:
             proxy = Proxy.from_str(proxy=proxy_data).as_url
             logger.info(f"{tg_client.name} | Run bot with this proxy: {proxy}")
