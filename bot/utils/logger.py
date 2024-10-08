@@ -7,4 +7,5 @@ logger.add(sink=sys.stdout, format="<white>{time:YYYY-MM-DD HH:mm:ss}</white>"
                                    " | <level>{level: <8}</level>"
                                    " | <cyan><b>{line}</b></cyan>"
                                    " - <white><b>{message}</b></white>")
+logger.add("../data/logs/tomarket.log", level="DEBUG", format="{time:YYYY-MM-DD HH:mm:ss} | {level} | {message}", rotation="20 MB")
 logger = logger.opt(colors=True)

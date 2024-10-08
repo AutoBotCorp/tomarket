@@ -1,4 +1,4 @@
-[![Static Badge](https://img.shields.io/badge/Telegram-Channel-Link?style=for-the-badge&logo=Telegram&logoColor=white&logoSize=auto&color=blue)](https://t.me/+jJhUfsfFCn4zZDk0)      [![Static Badge](https://img.shields.io/badge/Telegram-Bot%20Link-Link?style=for-the-badge&logo=Telegram&logoColor=white&logoSize=auto&color=blue)](https://t.me/Tomarket_ai_bot/app?startapp=0001QQnm)
+[![Static Badge](https://img.shields.io/badge/Telegram-Channel-Link?style=for-the-badge&logo=Telegram&logoColor=white&logoSize=auto&color=blue)](https://t.me/airdrop_hunter_runforlife)      [![Static Badge](https://img.shields.io/badge/Telegram-Bot%20Link-Link?style=for-the-badge&logo=Telegram&logoColor=white&logoSize=auto&color=blue)](https://t.me/Tomarket_ai_bot/app?startapp=0001QQnm)
 
 ## Recommendation before use
 
@@ -21,7 +21,7 @@
 |       Auto Rank Upgrade        |     ✅     |
 
 
-## [Settings](https://github.com/GravelFire/Tomarket/blob/main/.env-example/)
+## [Settings](https://github.com/AutoBotCorp/tomarket/blob/master/.env-example/)
 |        Settings         |                                      Description                                       |
 |:-----------------------:|:--------------------------------------------------------------------------------------:|
 |  **API_ID**             |        Your Telegram API ID (integer)                                                  |
@@ -37,7 +37,7 @@
 |    **AUTO_RANK_UPGRADE**    |                  Automatically upgrade rank (True / False)                   |
 | **USE_RANDOM_DELAY_IN_RUN** | Whether to use random delay at startup (True / False)                              |
 | **RANDOM_DELAY_IN_RUN** |        Random delay at startup (e.g. [0, 15])                                          |
-| **USE_PROXY_FROM_FILE** |        Whether to use a proxy from the [bot/config/proxies.txt](bot/config/proxies.txt) file (True / False)    |
+| **USE_PROXY_FROM_FILE** |        Whether to use a proxy from the [bot/core/profiles.py](bot/core/profiles.py) file (True / False)    |
 
 ## Quick Start 📚
 
@@ -83,9 +83,9 @@ python3 main.py
 
 You can also use arguments for quick start, for example:
 ```shell
-~/Tomarket >>> python3 main.py --action (1/2)
+~/tomarket >>> python3 main.py --action (1/2)
 # Or
-~/Tomarket >>> python3 main.py -a (1/2)
+~/tomarket >>> python3 main.py -a (1/2)
 
 # 1 - Run clicker
 # 2 - Creates a session
@@ -103,9 +103,9 @@ python main.py
 
 You can also use arguments for quick start, for example:
 ```shell
-~/Tomarket >>> python main.py --action (1/2)
+~/tomarket >>> python main.py --action (1/2)
 # Or
-~/Tomarket >>> python main.py -a (1/2)
+~/tomarket >>> python main.py -a (1/2)
 
 # 1 - Run clicker
 # 2 - Creates a session

@@ -210,9 +210,6 @@ class Tapper:
         if settings.FAKE_USERAGENT:            
             http_client.headers['User-Agent'] = generate_random_user_agent(device_type='android', browser_type='chrome')
 
-        # ``
-        # Наши переменные
-        # ``
         end_farming_dt = 0
         token_expiration = 0
         tickets = 0
