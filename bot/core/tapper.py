@@ -118,6 +118,7 @@ class Tapper:
         
     @error_handler
     async def login(self, http_client, tg_web_data: str, ref_id: str) -> tuple[str, str]:
+        # logger.debug(f"{ self.session_name } tg_web_data: { tg_web_data }")
         response = await self.make_request(http_client, "POST", "/user/login", json={"init_data": tg_web_data, "invite_code": ref_id})
         return response.get('data', {}).get('access_token', None)
 
@@ -312,7 +313,6 @@ class Tapper:
 
                 await asyncio.sleep(1.5)
 
-
                 if settings.AUTO_DAILY_REWARD:
                     claim_daily = await self.claim_daily(http_client=http_client)
                     if claim_daily and 'status' in claim_daily and claim_daily.get("status", 400) != 400:
@@ -365,7 +365,7 @@ class Tapper:
                         wait_second = task.get('waitSecond', 0)
                         starttask = await self.start_task(http_client=http_client, data={'task_id': task['taskId']})
                         task_data = starttask['data'] if starttask else None
-                        if task_data == 'ok' or (task_data.get() == 1 if task_data else False):
+                        if task_data == 'ok' or (task_data.get("status") == 2 if task_data else False):
                             logger.info(f"{self.session_name} | Start task <light-red>{task['name']}.</light-red> Wait {wait_second}s 🍅")
                             await asyncio.sleep(wait_second + 3)
                             await self.check_task(http_client=http_client, data={'task_id': task['taskId']})
