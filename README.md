@@ -37,7 +37,7 @@
 |    **AUTO_RANK_UPGRADE**    |                  Automatically upgrade rank (True / False)                   |
 | **USE_RANDOM_DELAY_IN_RUN** | Whether to use random delay at startup (True / False)                              |
 | **RANDOM_DELAY_IN_RUN** |        Random delay at startup (e.g. [0, 15])                                          |
-| **USE_PROXY_FROM_FILE** |        Whether to use a proxy from the [bot/core/profiles.py](bot/core/profiles.py) file (True / False)    |
+| **USE_PROXY_FROM_FILE** |        Whether to use a proxy from the [bot/core/profiles.py](bot/core/profiles-example.py) file (True / False)    |
 
 ## Quick Start 📚
 
@@ -51,6 +51,7 @@ Before you begin, make sure you have the following installed:
 1. Go to my.telegram.org and log in using your phone number.
 2. Select "API development tools" and fill out the form to register a new application.
 3. Record the API_ID and API_HASH provided after registering your application in the .env file.
+4. Create the profiles.py in the bot/core and config same the [profiles-example.py](bot/core/profiles-example.py)
 
 ## Installation
 You can download the [**repository**](https://github.com/AutoBotCorp/tomarket) by cloning it to your system and installing the necessary dependencies:
